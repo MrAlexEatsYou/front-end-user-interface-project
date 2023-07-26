@@ -1,0 +1,118 @@
+/* ------------------------------------------ Bootstrap Overrides */
+
+.d-none {
+    display: none;
+}
+
+/* ------------------------------------------ Colours */
+
+body {
+    background-color: lightgrey;
+}
+
+.header-container {
+    background-color: white;
+}
+
+/* ------------------------------------------ Fonts */
+
+p {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.header-col.nav-menu span {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.header-col.nav-menu span.nav-btn:hover {
+    font-weight: 600;
+}
+
+/* ------------------------------------------ Spacing */
+
+header {
+    margin: 50px;
+    border-radius: 20px;
+}
+
+.header-container {
+    border-radius: 20px;
+    min-height: 150px;
+    max-width: 1400px;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+}
+
+.nav-row {
+    margin: 0px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    height: 100px;
+}
+
+.header-col {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.nav-menu span {
+    padding: 10px;
+}
+
+.header-icon {
+    padding: 10px;
+    margin: 0px;
+}
+
+.header-col.social-menu,
+.reveal-menu-btn-container {
+    font-size: 40px;
+}
+
+.reveal-menu-btn-container {
+    margin: 0px;
+}
+
+input#nav-menu-hidden-check {
+    display: none;
+}
+
+span#content {
+    display: none;
+}
+
+input#nav-menu-hidden-check:checked~div .nav-menu,
+input#nav-menu-hidden-check:checked~div .social-menu {
+    display: flex !important;
+    align-items: center;
+    justify-items: center;
+    width: auto;
+    transition: 1s;
+}
+
+input#nav-menu-hidden-check:checked~div .nav-menu {
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+input#nav-menu-hidden-check:checked~div .nav-menu span {
+    padding: 0px;
+}
+
+input#nav-menu-hidden-check:checked~.nav-row {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    width: auto;
+    transition: 1s;
+}
