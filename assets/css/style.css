@@ -14,6 +14,14 @@ body {
     background-color: white;
 }
 
+.fa-solid.fa-bars {
+    color: black;
+}
+
+.close-menu-btn {
+    color: black;
+}
+
 /* ------------------------------------------ Fonts */
 
 p {
@@ -67,6 +75,10 @@ header {
     padding: 10px;
 }
 
+.header-logo {
+    padding: 10px;
+}
+
 .header-icon {
     padding: 10px;
     margin: 0px;
@@ -89,30 +101,75 @@ span#content {
     display: none;
 }
 
-input#nav-menu-hidden-check:checked~div .nav-menu,
-input#nav-menu-hidden-check:checked~div .social-menu {
-    display: flex !important;
-    align-items: center;
-    justify-items: center;
-    width: auto;
-    transition: 1s;
+.menu-toggle {
+    display: block;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    margin: 10px;
 }
 
-input#nav-menu-hidden-check:checked~div .nav-menu {
-    flex-direction: column;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
+@media only screen and (max-width: 576px) {
 
-input#nav-menu-hidden-check:checked~div .nav-menu span {
-    padding: 0px;
-}
+    .close-menu-btn {
+        transform: rotate(-180deg);
+        opacity: 0;
+        transition: 0.5s;
+        position: absolute;
+        top: 0;
+        left: 5px;
+    }
 
-input#nav-menu-hidden-check:checked~.nav-row {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    flex-direction: column;
-    width: auto;
-    transition: 1s;
+    input#nav-menu-hidden-check:checked~div .close-menu-btn {
+        transform: rotate(180deg);
+        opacity: 100;
+        transition: 0.5s;
+        position: absolute;
+        top: 0;
+        left: 5px;
+    }
+
+    .reveal-menu-btn {
+        transform: rotate(-180deg);
+        opacity: 100;
+        transition: 0.5s;
+        position: absolute;
+        top: 0;
+        left: 2px;
+    }
+
+    input#nav-menu-hidden-check:checked~div .reveal-menu-btn {
+        transform: rotate(180deg);
+        opacity: 0;
+        transition: 0.5s;
+        position: absolute;
+        top: 0;
+        left: 2px;
+    }
+
+    input#nav-menu-hidden-check:checked~div .nav-menu,
+    input#nav-menu-hidden-check:checked~div .social-menu {
+        display: flex !important;
+        align-items: center;
+        justify-items: center;
+        width: auto;
+    }
+
+    input#nav-menu-hidden-check:checked~div .nav-menu {
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    input#nav-menu-hidden-check:checked~div .nav-menu span {
+        padding: 0px;
+    }
+
+    input#nav-menu-hidden-check:checked~.nav-row {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: column;
+        width: auto;
+    }
 }

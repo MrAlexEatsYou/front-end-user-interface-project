@@ -31,7 +31,8 @@
                     <div class="header-col header-logo col d-flex justify-content-center align-items-center">
                         <img class="header-logo-img" src="/assets/images/logo.png" alt="logo" href="/index.html">
                     </div>
-                    <div class="header-col nav-menu col d-none d-sm-flex justify-content-center align-items-center">
+                    <div
+                        class="header-col nav-menu col d-none d-sm-flex sm-opacity-100 justify-content-center align-items-center">
                         <span class="nav-btn">Home</span>
                         <span>-</span>
                         <span class="nav-btn">Quote</span>
@@ -48,9 +49,11 @@
                         class="header-row reveal-menu-btn-container row d-sm-none d-flex justify-content-center align-items-center">
                         <span class="reveal-menu-btn-container d-flex justify-content-center align-items-center">
                             <label for="nav-menu-hidden-check">
-                                <i class="header-icon reveal-menu-btn fa-brands fa-facebook"></i>
+                                <a id="menu-toggle" class="menu-toggle">
+                                    <i class="fa-solid fa-bars reveal-menu-btn"></i>
+                                    <i class="fa-solid fa-x close-menu-btn"></i>
+                                </a>
                             </label>
-                        </span>
                         </span>
                     </div>
                 </div>
@@ -59,7 +62,6 @@
     </section>
 
     <section>
-
         <span id="content">Content</span>
     </section>
 
