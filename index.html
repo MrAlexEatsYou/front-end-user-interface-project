@@ -24,7 +24,7 @@
 <body>
 
     <section>
-        <header id="header" class="d-flex align-items-center justify-content-center">
+        <header id="header" class="fixed-top d-flex align-items-center justify-content-center">
             <nav class="header-container container ">
                 <input type="checkbox" id="nav-menu-hidden-check">
                 <div class="nav-row row h-100">
@@ -53,10 +53,10 @@
                         class="header-row reveal-menu-btn-container row d-sm-none d-flex justify-content-center align-items-center">
                         <span class="reveal-menu-btn-container d-flex justify-content-center align-items-center">
                             <label for="nav-menu-hidden-check">
-                                <a id="menu-toggle" class="menu-toggle">
+                                <div id="menu-toggle" class="menu-toggle">
                                     <i class="fa-solid fa-bars reveal-menu-btn"></i>
                                     <i class="fa-solid fa-x close-menu-btn"></i>
-                                </a>
+                                </div>
                             </label>
                         </span>
                     </div>
@@ -70,8 +70,31 @@
     </section>
 
     <section>
-        <footer>
-
+        <footer id="footer" class="footer navbar fixed-bottom px-5 py-2">
+            <div class="container footer-container py-2 h-100">
+                <div class="footer-row row d-flex align-items-center justify-content-center">
+                    <div class="footer-info px-5 py-3 py-lg-0 col-md-6 order-md-2 col-lg order-lg-1">
+                        <p>Elf Solicitors is a trading name of Magical Law Limited. Registered in The Land Of Moz under
+                            organisation number 94826.</p>
+                    </div>
+                    <div class="separator d-none d-lg-block col-lg-auto order-lg-2"></div>
+                    <div class="map-col col-md-12 order-md-1 col-lg-6 order-lg-3">
+                        <img class="map-image img-responsive" src="/assets/images/timbuktu.png"
+                            alt="map showing location of the business">
+                    </div>
+                    <div class="separator d-none d-lg-block col-lg-auto order-lg-4"></div>
+                    <div
+                        class="footer-address d-flex align-self-start justify-content-center py-3 py-lg-3 col-md-6 order-md-3 col-lg order-lg-5">
+                        <div class="add-container">
+                            <h5 class="add-header">Address:</h5>
+                            <p class="add-street">123 Road Street</p>
+                            <p class="add-town">Big City</p>
+                            <p class="add-county">County Durham</p>
+                            <p class="add-postcode">PO37 C06</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
     </section>
 

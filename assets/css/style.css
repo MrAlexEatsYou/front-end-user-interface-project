@@ -7,7 +7,11 @@
 /* ------------------------------------------ Colours */
 
 body {
-    background-color: lightgrey;
+    background-color: #ededed;
+}
+
+#footer {
+    background-color: white;
 }
 
 .header-container {
@@ -20,6 +24,11 @@ body {
 
 .close-menu-btn {
     color: black;
+}
+
+.separator {
+    background-color: black;
+    width: 5px;
 }
 
 /* ------------------------------------------ Fonts */
@@ -41,6 +50,14 @@ p {
 .nav-link {
     color: black;
     text-decoration: none;
+}
+
+.footer-address p {
+    margin: 0;
+}
+
+.footer-info p {
+    margin: 0;
 }
 
 /* ------------------------------------------ Styling */
@@ -113,6 +130,10 @@ span#content {
     margin: 10px;
 }
 
+div.menu-toggle i:hover {
+    cursor: pointer;
+}
+
 .header-icon {
     padding: 10px;
     margin: 0px;
@@ -137,7 +158,44 @@ span#content {
 }
 
 .header-icon.fa-envelope {
-    color: green;
+    color: lightsalmon;
+}
+
+/* -------------- Footer */
+
+#footer .map-image {
+    max-width: 100%;
+}
+
+#footer .map-image {
+    object-fit: none;
+    /* Do not scale the image */
+    object-position: center;
+    /* Center the image within the element */
+    width: 100%;
+    max-height: 200px;
+}
+
+.map-col {
+    border-left: 3px;
+    border-right: 3px;
+    border-color: black;
+}
+
+.separator {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 160px;
+    width: 1px;
+    background-color: black;
+    opacity: 20%;
+}
+
+.add-container {
+    width: 70%;
 }
 
 
@@ -206,5 +264,12 @@ span#content {
         justify-items: center;
         flex-direction: column;
         width: auto;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .add-container {
+        text-align: center;
     }
 }
