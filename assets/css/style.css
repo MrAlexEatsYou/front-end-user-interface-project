@@ -31,7 +31,31 @@ body {
     width: 5px;
 }
 
+.add-link {
+    color: black;
+    text-decoration: none;
+    transition: 0.35s;
+}
+
+.add-link:hover {
+    color: lightgrey;
+}
+
+.add-link h5 {
+    color: black;
+    text-decoration: underline;
+}
+
 /* ------------------------------------------ Fonts */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Work Sans', sans-serif;
+}
 
 p {
     font-family: 'Work Sans', sans-serif;
@@ -58,6 +82,10 @@ p {
 
 .footer-info p {
     margin: 0;
+}
+
+#header-link-bold {
+    font-weight: 700;
 }
 
 /* ------------------------------------------ Styling */
@@ -137,12 +165,12 @@ div.menu-toggle i:hover {
 .header-icon {
     padding: 10px;
     margin: 0px;
-    transition: filter 0.35s;
+    transition: opacity 0.35s;
 }
 
 .header-icon:hover {
-    transition: filter 0.35s;
-    filter: Saturate(20%)
+    transition: opacity 0.35s;
+    opacity: 20%;
 }
 
 .header-icon.fa-facebook {
