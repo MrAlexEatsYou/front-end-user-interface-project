@@ -12,9 +12,8 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="/assets/css/style.css">
-    </link>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -26,12 +25,12 @@
 <body class="d-flex flex-column min-vh-100">
 
     <section>
-        <header id="header" class="d-flex align-items-center justify-content-center">
+        <header id="header" class="d-flex m-3 m-md-5 align-items-center justify-content-center">
             <nav class="header-container container ">
                 <input type="checkbox" id="nav-menu-hidden-check">
                 <div class="nav-row row h-100">
                     <div class="header-col header-logo col d-flex justify-content-center align-items-center">
-                        <img class="header-logo-img" src="/assets/images/logo.png" alt="logo" href="/index.html">
+                        <img class="header-logo-img" src="/assets/images/logo.png" alt="logo">
                     </div>
                     <div
                         class="header-col nav-menu col d-none d-sm-flex sm-opacity-100 justify-content-center align-items-center">
@@ -53,23 +52,538 @@
                     </div>
                     <div
                         class="header-row reveal-menu-btn-container row d-sm-none d-flex justify-content-center align-items-center">
-                        <span class="reveal-menu-btn-container d-flex justify-content-center align-items-center">
-                            <label for="nav-menu-hidden-check">
-                                <div id="menu-toggle" class="menu-toggle">
+                        <div class="reveal-menu-btn-container d-flex justify-content-center align-items-center">
+                            <div id="menu-toggle" class="menu-toggle">
+                                <label for="nav-menu-hidden-check">
                                     <i class="fa-solid fa-bars reveal-menu-btn"></i>
-                                    <i class="fa-solid fa-x close-menu-btn"></i>
-                                </div>
-                            </label>
-                        </span>
+                                    <i class="fa-solid fa-x close-menu-btn"></i></label>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
         </header>
     </section>
 
-    <section>
+    <section class="my-auto">
         <div class="content-container container">
-            <div class="row text-center rounded bg-white p-3 my-5 mx-2 m-md-5"></div>
+            <div class="row rounded bg-white p-3 my-5 mx-2 m-md-5">
+
+                <div class="container">
+                    <div class="row text-center d-flex justify-content-center">
+                        <div class="col-12 text-center py-3">
+                            <h1>Welcome to Elven Homes by Enchanting Elven Solicitors!</h1>
+                        </div>
+
+                        <p class="col-10 my-4">Are you in need of a magical touch for your residential conveyancing? Look no further! Our
+                            elven solicitors
+                            are here to make your property dreams come true.</p>
+                        <p class="col-8 my-4">Whether you're buying a new enchanted abode or selling your current magical dwelling, our
+                            experienced elven
+                            team will guide you through the process and provide you with the most enchanting quotes.</p>
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center my-4">
+                            <button type="button" class="btn btn-primary btn-lg mx-md-3" data-bs-toggle="modal"
+                                data-bs-target="#purchaseModal">
+                                Request Purchase Quote 🏰
+                            </button>
+
+                            <button type="button" class="btn btn-primary btn-lg mx-md-3" data-bs-toggle="modal"
+                                data-bs-target="#saleModal">
+                                Request Sale Quote 🧙‍♂️
+                            </button>
+                        </div>
+
+                        <p class="my-4">Let the magic begin! ✨</p>
+
+                    </div>
+                </div>
+
+                <div class="modal fade" id="purchaseModal" tabindex="-1" aria-labelledby="purchaseModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="purchaseModalLabel">Property Purchase Form</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body px-2">
+                                <form>
+                                    <div class="bg-light rounded my-2 py-3 px-3">
+                                        <label for="purchasePrice" class="form-label">Purchase Price</label>
+                                        <input type="number" class="form-control" id="purchasePrice"
+                                            name="purchasePrice" step="1" min="0" required>
+                                    </div>
+                                    <div class="bg-light rounded my-2 py-3 px-3">
+                                        <label class="form-label">Will you be getting a mortgage?</label><br>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="mortgage" id="mortgageNo"
+                                                value="No" required>
+                                            <label class="form-check-label" for="mortgageNo">No</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="mortgage"
+                                                id="mortgageYes" value="Yes" required>
+                                            <label class="form-check-label" for="mortgageYes">Yes</label>
+                                        </div>
+                                    </div>
+                                    <div class="bg-light rounded my-2 py-3 px-3">
+                                        <label class="form-label">Freehold or leasehold property?</label><br>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="propertyType"
+                                                id="freehold" value="Freehold" required>
+                                            <label class="form-check-label" for="freehold">Freehold</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="propertyType"
+                                                id="leasehold" value="Leasehold" required>
+                                            <label class="form-check-label" for="leasehold">Leasehold</label>
+                                        </div>
+                                    </div>
+                                    <div class="bg-light rounded my-2 py-3 px-3">
+                                        <label class="form-label">What type of property is it?</label><br>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="propertyCategory"
+                                                id="house" value="House" required>
+                                            <label class="form-check-label" for="house">House</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="propertyCategory"
+                                                id="flat" value="Flat" required>
+                                            <label class="form-check-label" for="flat">Flat</label>
+                                        </div>
+                                    </div>
+                                    <div class="bg-light rounded my-2 py-3 px-3">
+                                        <label class="form-label">Where is the property located?</label><br>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="propertyLocation"
+                                                id="england" value="England" required>
+                                            <label class="form-check-label" for="england">England</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="propertyLocation"
+                                                id="wales" value="Wales" required>
+                                            <label class="form-check-label" for="wales">Wales</label>
+                                        </div>
+                                    </div>
+                                    <div class="bg-light rounded my-2 py-3 px-3">
+                                        <label for="numBuyers" class="form-label">Number of Buyers</label>
+                                        <select class="form-select" id="numBuyers" name="numBuyers" required>
+                                            <option value="" disabled selected>Please select...</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                    <div class="bg-light rounded my-2 py-3 px-3">
+                                        <label for="purchaseScheme" class="form-label">Are you using a purchase
+                                            scheme?</label>
+                                        <select class="form-select" id="purchaseScheme" name="purchaseScheme" required>
+                                            <option value="" disabled selected>Please select...</option>
+                                            <option value="Not using a scheme">Not using a scheme</option>
+                                            <option value="Help to Buy Equity Loan Scheme">Help to Buy Equity Loan
+                                                Scheme</option>
+                                            <option value="Help to Buy ISA Scheme">Help to Buy ISA Scheme</option>
+                                            <option value="Right to Buy Scheme">Right to Buy Scheme</option>
+                                            <option value="Shared Ownership Scheme">Shared Ownership Scheme</option>
+                                        </select>
+                                    </div>
+                                    <div class="bg-light rounded my-2 py-3 px-3">
+                                        <label class="form-label">Is the property any of the following?</label><br>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="propertyTags"
+                                                id="newbuild" value="Newbuild">
+                                            <label class="form-check-label" for="newbuild">Newbuild</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="propertyTags"
+                                                id="unregistered" value="Unregistered">
+                                            <label class="form-check-label" for="unregistered">Unregistered</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="propertyTags"
+                                                id="auction" value="Auction">
+                                            <label class="form-check-label" for="auction">Auction</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="propertyTags"
+                                                id="buyToLet" value="Buy To Let">
+                                            <label class="form-check-label" for="buyToLet">Buy To Let</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="propertyTags"
+                                                id="repossession" value="Repossession">
+                                            <label class="form-check-label" for="repossession">Repossession</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="propertyTags"
+                                                id="highriseLeasehold" value="High-rise Leasehold">
+                                            <label class="form-check-label" for="highriseLeasehold">High-rise
+                                                Leasehold</label>
+                                        </div>
+                                    </div>
+                                    <div class="bg-light rounded my-2 py-3 px-3">
+                                        <label class="form-label">Are you purchasing an additional property?</label><br>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="additionalProperty"
+                                                id="additionalPropertyNo" value="No" required>
+                                            <label class="form-check-label" for="additionalPropertyNo">No</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="additionalProperty"
+                                                id="additionalPropertyYes" value="Yes" required>
+                                            <label class="form-check-label" for="additionalPropertyYes">Yes</label>
+                                        </div>
+                                    </div>
+                                    <div class="bg-light rounded my-2 py-3 px-3">
+                                        <label class="form-label">Are you a first time buyer?</label><br>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="firstTimeBuyer"
+                                                id="firstTimeBuyerNo" value="No" required>
+                                            <label class="form-check-label" for="firstTimeBuyerNo">No</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="firstTimeBuyer"
+                                                id="firstTimeBuyerYes" value="Yes" required>
+                                            <label class="form-check-label" for="firstTimeBuyerYes">Yes</label>
+                                        </div>
+                                    </div>
+                                    <div class="bg-light rounded my-2 py-3 px-3">
+                                        <label class="form-label">Do you have any gifted deposit / gifted
+                                            loans?</label><br>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="giftedDeposit"
+                                                id="giftedDepositNo" value="No" required>
+                                            <label class="form-check-label" for="giftedDepositNo">No</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="giftedDeposit"
+                                                id="giftedDepositYes" value="Yes" required>
+                                            <label class="form-check-label" for="giftedDepositYes">Yes</label>
+                                        </div>
+                                    </div>
+                                    <div class="bg-light rounded my-2 py-3 px-3">
+                                        <label class="form-label">Is the property address known?</label><br>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="addressKnown"
+                                                id="addressKnownNo" value="No" required>
+                                            <label class="form-check-label" for="addressKnownNo">No</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="addressKnown"
+                                                id="addressKnownYes" value="Yes" required>
+                                            <label class="form-check-label" for="addressKnownYes">Yes</label>
+                                        </div>
+                                    </div>
+
+                                    <div id="additionalInputs" class="container" style="display: none;">
+                                        <h4 class="p-2">Property Address</h4>
+                                        <div class="row">
+                                            <div class="col-12 bg-light rounded my-2 py-3 px-3">
+                                                <label for="streetAddress" class="form-label">Street Address</label>
+                                                <input type="text" class="form-control" id="streetAddress"
+                                                    name="streetAddress">
+                                            </div>
+                                            <div class="col-6 bg-light rounded my-2 py-3 px-3">
+                                                <label for="townAddress" class="form-label">Town</label>
+                                                <input type="text" class="form-control" id="townAddress"
+                                                    name="townAddress">
+                                            </div>
+                                            <div class="col-6 bg-light rounded my-2 py-3 px-3">
+                                                <label for="postCode" class="form-label">Post Code</label>
+                                                <input type="text" class="form-control" id="postCode" name="postCode">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="contactDetailsPurchase" class="container">
+                                        <h4 class="p-2">Contact Details</h4>
+                                        <div class="row">
+                                            <div class="col-2 bg-light rounded my-2 py-3 px-3">
+                                                <label for="title" class="form-label">Title</label>
+                                                <select class="form-select" id="title" name="title" required>
+                                                    <option value="" disabled selected>Title</option>
+                                                    <option value="Mr">Mr</option>
+                                                    <option value="Mrs">Mrs</option>
+                                                    <option value="Miss">Miss</option>
+                                                    <option value="Ms">Ms</option>
+                                                    <option value="Dr">Dr</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-5 bg-light rounded my-2 py-3 px-3">
+                                                <label for="firstNamePurchase" class="form-label">First Name</label>
+                                                <input type="text" class="form-control" id="firstNamePurchase"
+                                                    name="firstNamePurchase">
+                                            </div>
+                                            <div class="col-5 bg-light rounded my-2 py-3 px-3">
+                                                <label for="lastNamePurchase" class="form-label">Last Name</label>
+                                                <input type="text" class="form-control" id="lastNamePurchase"
+                                                    name="lastNamePurchase">
+                                            </div>
+                                            <div class="col-6 bg-light rounded my-2 py-3 px-3">
+                                                <label for="emailPurchase" class="form-label">Email</label>
+                                                <input type="text" class="form-control" id="emailPurchase"
+                                                    name="emailPurchase">
+                                            </div>
+                                            <div class="col-6 bg-light rounded my-2 py-3 px-3">
+                                                <label for="phonePurchase" class="form-label">Phone Number</label>
+                                                <input type="text" class="form-control" id="phonePurchase"
+                                                    name="phonePurchase">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn btn-primary col-8 mx-auto">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="saleModal" tabindex="-1" aria-labelledby="saleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="saleModalLabel">Property Sale Form</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body px-2">
+                                <form>
+                                    <div class="bg-light rounded my-2 py-3 px-3">
+                                        <label for="salePriceSale" class="form-label">Sale Price (e.g. 125000)</label>
+                                        <input type="number" class="form-control" id="salePriceSale" name="salePrice"
+                                            step="0.01" min="0" required>
+                                    </div>
+                                    <div class="bg-light rounded my-2 py-3 px-3">
+                                        <label class="form-label">Do you have a mortgage?</label><br>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="hasMortgageSale"
+                                                id="mortgageNoSale" value="No" required>
+                                            <label class="form-check-label" for="mortgageNoSale">No</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="hasMortgageSale"
+                                                id="mortgageYesSale" value="Yes" required>
+                                            <label class="form-check-label" for="mortgageYesSale">Yes</label>
+                                        </div>
+                                    </div>
+                                    <div class="bg-light rounded my-2 py-3 px-3">
+                                        <label class="form-label">Freehold or leasehold property?</label><br>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="propertyTypeSale"
+                                                id="freeholdSale" value="Freehold" required>
+                                            <label class="form-check-label" for="freeholdSale">Freehold</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="propertyTypeSale"
+                                                id="leaseholdSale" value="Leasehold" required>
+                                            <label class="form-check-label" for="leaseholdSale">Leasehold</label>
+                                        </div>
+                                    </div>
+                                    <div class="bg-light rounded my-2 py-3 px-3">
+                                        <label class="form-label">What type of property is it?</label><br>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="propertyCategorySale"
+                                                id="houseSale" value="House" required>
+                                            <label class="form-check-label" for="houseSale">House</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="propertyCategorySale"
+                                                id="flatSale" value="Flat" required>
+                                            <label class="form-check-label" for="flatSale">Flat</label>
+                                        </div>
+                                    </div>
+                                    <div class="bg-light rounded my-2 py-3 px-3">
+                                        <label for="numSellersSale" class="form-label">Number of Sellers</label>
+                                        <select class="form-select" id="numSellersSale" name="numSellersSale" required>
+                                            <option value="" disabled selected>Please select...</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                    <div class="bg-light rounded my-2 py-3 px-3">
+                                        <label for="purchaseSchemesSale" class="form-label">Did you use any of these
+                                            purchase schemes when you bought the property?</label>
+                                        <select class="form-select" id="purchaseSchemesSale" name="purchaseSchemesSale"
+                                            required>
+                                            <option value="" disabled selected>Please select...</option>
+                                            <option value="Not using a scheme">Not using a scheme</option>
+                                            <option value="Scheme 1">Scheme 1</option>
+                                            <option value="Scheme 2">Scheme 2</option>
+                                        </select>
+                                    </div>
+                                    <div class="bg-light rounded my-2 py-3 px-3">
+                                        <label class="form-label">Is the property any of the following?</label><br>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="propertyTagsSale"
+                                                id="unregisteredSale" value="Unregistered">
+                                            <label class="form-check-label" for="unregisteredSale">Unregistered</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="propertyTagsSale"
+                                                id="auctionSale" value="Auction">
+                                            <label class="form-check-label" for="auctionSale">Auction</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="propertyTagsSale"
+                                                id="buyToLetSale" value="Buy To Let">
+                                            <label class="form-check-label" for="buyToLetSale">Buy To Let</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="propertyTagsSale"
+                                                id="probateSale" value="Related to Probate">
+                                            <label class="form-check-label" for="probateSale">Related to Probate</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="propertyTagsSale"
+                                                id="matrimonialSale" value="Matrimonial">
+                                            <label class="form-check-label" for="matrimonialSale">Matrimonial</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="propertyTagsSale"
+                                                id="highriseLeaseholdSale" value="High-rise Leasehold">
+                                            <label class="form-check-label" for="highriseLeaseholdSale">High-rise
+                                                Leasehold</label>
+                                        </div>
+                                    </div>
+                                    <div class="bg-light rounded my-2 py-3 px-3">
+                                        <label class="form-label">Is the property address known?</label><br>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="addressKnownSale"
+                                                id="addressKnownNoSale" value="No" required>
+                                            <label class="form-check-label" for="addressKnownNoSale">No</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="addressKnownSale"
+                                                id="addressKnownYesSale" value="Yes" required>
+                                            <label class="form-check-label" for="addressKnownYesSale">Yes</label>
+                                        </div>
+                                    </div>
+
+                                    <div id="additionalInputsSale" class="container" style="display: none;">
+                                        <h4 class="p-2">Property Address</h4>
+                                        <div class="row">
+                                            <div class="col-12 bg-light rounded my-2 py-3 px-3">
+                                                <label for="streetAddressSale" class="form-label">Street Address</label>
+                                                <input type="text" class="form-control" id="streetAddressSale"
+                                                    name="streetAddressSale">
+                                            </div>
+                                            <div class="col-6 bg-light rounded my-2 py-3 px-3">
+                                                <label for="townAddressSale" class="form-label">Town</label>
+                                                <input type="text" class="form-control" id="townAddressSale"
+                                                    name="townAddressSale">
+                                            </div>
+                                            <div class="col-6 bg-light rounded my-2 py-3 px-3">
+                                                <label for="postCodeSale" class="form-label">Post Code</label>
+                                                <input type="text" class="form-control" id="postCodeSale"
+                                                    name="postCodeSale">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="contactDetails" class="container">
+                                        <h4 class="p-2">Contact Details</h4>
+                                        <div class="row">
+                                            <div class="col-2 bg-light rounded my-2 py-3 px-3">
+                                                <label for="titleSale" class="form-label">Title</label>
+                                                <select class="form-select" id="titleSale" name="titleSale" required>
+                                                    <option value="" disabled selected>Title</option>
+                                                    <option value="Mr">Mr</option>
+                                                    <option value="Mrs">Mrs</option>
+                                                    <option value="Miss">Miss</option>
+                                                    <option value="Ms">Ms</option>
+                                                    <option value="Dr">Dr</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-5 bg-light rounded my-2 py-3 px-3">
+                                                <label for="firstNameSale" class="form-label">First Name</label>
+                                                <input type="text" class="form-control" id="firstNameSale"
+                                                    name="firstNameSale">
+                                            </div>
+                                            <div class="col-5 bg-light rounded my-2 py-3 px-3">
+                                                <label for="lastNameSale" class="form-label">Last Name</label>
+                                                <input type="text" class="form-control" id="lastNameSale"
+                                                    name="lastNameSale">
+                                            </div>
+                                            <div class="col-6 bg-light rounded my-2 py-3 px-3">
+                                                <label for="emailSale" class="form-label">Email</label>
+                                                <input type="text" class="form-control" id="emailSale" name="emailSale">
+                                            </div>
+                                            <div class="col-6 bg-light rounded my-2 py-3 px-3">
+                                                <label for="phoneSale" class="form-label">Phone Number</label>
+                                                <input type="text" class="form-control" id="phoneSale" name="phoneSale">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn btn-primary col-8 mx-auto">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <script>
+                const purchaseAddressKnownInputs = document.querySelectorAll('input[name="addressKnown"]');
+                const purchaseAddressKnownYes = document.getElementById('addressKnownYes');
+                const purchaseAdditionalInputs = document.getElementById('additionalInputs');
+
+                purchaseAddressKnownInputs.forEach((el) => {
+                    el.addEventListener('click', function () {
+                        if (purchaseAddressKnownYes.checked) {
+                            purchaseAdditionalInputs.style.display = 'block';
+                        } else {
+                            purchaseAdditionalInputs.style.display = 'none';
+                        }
+                    });
+                });
+
+                const saleAddressKnownInputs = document.querySelectorAll('input[name="addressKnownSale"]');
+                const saleAddressKnownYes = document.getElementById('addressKnownYesSale');
+                const saleAdditionalInputs = document.getElementById('additionalInputsSale');
+
+                saleAddressKnownInputs.forEach((el) => {
+                    el.addEventListener('click', function () {
+                        if (saleAddressKnownYes.checked) {
+                            saleAdditionalInputs.style.display = 'block';
+                        } else {
+                            saleAdditionalInputs.style.display = 'none';
+                        }
+                    });
+                });
+            </script>
+
         </div>
     </section>
 
@@ -78,7 +592,7 @@
             <div class="container footer-container py-2 h-100">
                 <div class="footer-row row d-flex align-items-center justify-content-center">
                     <div class="footer-info px-5 py-3 py-lg-0 col-md-6 order-md-2 col-lg order-lg-1">
-                        <p>Elf Solicitors is a trading name of Magical Law Limited. Registered in The Land Of Moz under
+                        <p>Elven Homes is a trading name of Magical Law Limited. Registered in The Land Of Moz under
                             organisation number 94826.</p>
                     </div>
                     <div class="separator d-none d-lg-block col-lg-auto order-lg-2"></div>
