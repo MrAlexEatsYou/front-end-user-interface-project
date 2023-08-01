@@ -3,47 +3,60 @@
 ## Idea - Residential Conveyancing Quote Form
 
 ### Mission Statement:
+
 Create a simple, easy to use quote form for clients that need residential conveyancing services. 
 
 ## Goals
+
 ### Business Goals:
+
 Gain as many leads as possible
 Collect data for a mailing list
 Make on-boarding easy and efficient
 
 ### Customer Goals:
+
 Get a quote in a simple and easy way
 
 ## Features To Achieve These Goals
+
 Form to collect user data and generate quote
 Easy to use navigation
 
 ## Pages Needed
 
 ### Home
+
 Logo - Navigation
 Hero
 Option to choose Purchase or Sale quote
 
 ### Quote Form
+
 Logo - Navigation
 Quote Form
 
 ### About
+
 Logo - Navigation
 Explanation of services and business
 
 ## Header Footer
+
 ### Header
+
 Logo - Navigation - External Social Media
 
 ### Footer
+
 Business info - Map - Address
 
 ## Quote Form
+
 ### Information Needed To Make Quote
 
 #### Minimum/Required
+
 Name
 Email
 Type of Quote
@@ -54,6 +67,7 @@ Misc property options (Newbuild, Unregistered, Auction, Buy To Let, Repossession
 Is this an additional property
 
 #### Nice to Have
+
 Phone
 Address
 Wireframe
@@ -62,12 +76,15 @@ Using Figma - figma.com
 # Wireframes
 
 ## Desktop
+
 ![Desktop Wireframe](/assets/images/desktop.png)
 
 ## Tablet
+
 ![Tablet Wireframe](/assets/images/tablet.png)
 
-# Phone
+## Phone
+
 ![Phone Wireframe](/assets/images/phone1.png)
 ![Second Phone Wireframe](/assets/images/phone2.png)
 
@@ -85,6 +102,12 @@ The Home page and About page are quite basic, simple text based information. The
 
 I made sure to keep all IDs unique while making this form.
 
-
 # Deployment
+
 I deployed this project using the code institute recommended process of hosting on Github Pages. I included the images from the readme in the assets folder.
+
+After deployment, my styles and images weren't loading properly. I quickly realised that the links were wrong and had been set to `/assets/image.png` and needed to be replaced with `./assets/image.png`
+
+If I had more time, I would like to make the layout a bit more interesting. While I like the simple design, as the idea for an elven solicitors firm grew, I could have linked the design closer to the theme.
+
+I also realise that some of my custom CSS code is not necessary and could have been implemented with pure bootstrap utility classes. As I progressed through development, I noticed this more and more. This led me to deleting and replacing some CSS with Bootstrap code instead. If I had more time I would go back through the project and look at where else I could replace CSS with Bootstrap.
