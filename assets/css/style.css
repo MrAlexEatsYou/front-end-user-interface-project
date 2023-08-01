@@ -253,7 +253,7 @@ div.menu-toggle i:hover {
 
     input#nav-menu-hidden-check:checked~div .close-menu-btn {
         transform: rotate(180deg);
-        opacity: 100;
+        opacity: 1;
         transition: 0.5s;
         position: absolute;
         top: 0;
@@ -262,7 +262,7 @@ div.menu-toggle i:hover {
 
     .reveal-menu-btn {
         transform: rotate(-180deg);
-        opacity: 100;
+        opacity: 1;
         transition: 0.5s;
         position: absolute;
         top: 0;

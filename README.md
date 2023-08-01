@@ -1,39 +1,90 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+#User Centric Front End Development
 
-Welcome,
+##Idea - Residential Conveyancing Quote Form
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+###Mission Statement:
+Create a simple, easy to use quote form for clients that need residential conveyancing services. 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
+##Goals
+###Business Goals:
+Gain as many leads as possible
+Collect data for a mailing list
+Make on-boarding easy and efficient
 
-## Codeanywhere Reminders
+###Customer Goals:
+Get a quote in a simple and easy way
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+##Features To Achieve These Goals
+Form to collect user data and generate quote
+Easy to use navigation
 
-`python3 -m http.server`
+##Pages Needed
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+###Home
+Logo - Navigation
+Hero
+Option to choose Purchase or Sale quote
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+###Quote Form
+Logo - Navigation
+Quote Form
 
-`http_server`
+###About
+Logo - Navigation
+Explanation of services and business
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+##Header Footer
+###Header
+Logo - Navigation - External Social Media
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+###Footer
+Business info - Map - Address
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+##Quote Form
+###Information Needed To Make Quote
 
-To log into the Heroku toolbelt CLI:
+####Minimum/Required
+Name
+Email
+Type of Quote
+Freehold or Leasehold
+Property location
+Using a Purchase Scheme
+Misc property options (Newbuild, Unregistered, Auction, Buy To Let, Repossession, High-Rise Leasehold)
+Is this an additional property
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+####Nice to Have
+Phone
+Address
+Wireframe
+Using Figma - figma.com
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+#Wireframes
 
----
+##Desktop
+![Desktop Wireframe](\assets\images\desktop.png)
 
-Happy coding!
+##Tablet
+![Tablet Wireframe](\assets\images\tablet.png)
+
+#Phone
+![Phone Wireframe](\assets\images\phone.png)
+![Second Phone Wireframe](\assets\images\phone2.png)
+
+I mainly used HTML and CSS to code this project. Bootstrap 5 has been used to enable easy styling of the project. There is also a small section of Javascript embedded in the Quote Page and the Bootstrap JS dependencies are also included.
+
+I began by coding the header. I wanted to have a clean, simple to navigate header. In order to achieve this I use minimal colour and rely on visual indicators like thickness and fades to make the navigation intuitive. I also made the header responsive by hiding certain sections on different screen sizes and creating a ‘reveal’ button to show the full menu when viewed on a small screen.
+
+I used a trick whereby you create a button by using a checkbox input and a label. The checkbox button is placed above the element that will be revealed, and the label for that checkbox is placed where the button will appear. Then pseudo class :checked can be used to trigger the reveal of the hidden element.
+
+The next section I created was the footer. I wanted three sections, showing the address, a map and some blurb about the company. I used the bootstrap ‘order’ utility classes to change the order of these depending on screen size. 
+
+I then duplicated the code to make two more pages (three in total). I could then add the body code separately on each page.
+
+The Home page and About page are quite basic, simple text based information. The quote page however, includes two separate forms contained in modals. These forms don’t go anywhere when submitted, but this is only a proof-of-concept and in the future, would realistically get put into a database and/or processed by a calculator function to provide the client with an estimated quote.
+
+I made sure to keep all IDs unique while making this form.
+
+
+#Deployment
+I deployed this project using the code institute recommended process of hosting on Github Pages. I included the images from the readme in the assets folder.
