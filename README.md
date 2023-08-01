@@ -68,7 +68,7 @@ Using Figma - figma.com
 ![Tablet Wireframe](/assets/images/tablet.png)
 
 # Phone
-![Phone Wireframe](/assets/images/phone.png)
+![Phone Wireframe](/assets/images/phone1.png)
 ![Second Phone Wireframe](/assets/images/phone2.png)
 
 I mainly used HTML and CSS to code this project. Bootstrap 5 has been used to enable easy styling of the project. There is also a small section of Javascript embedded in the Quote Page and the Bootstrap JS dependencies are also included.
