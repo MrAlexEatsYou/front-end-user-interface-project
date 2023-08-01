@@ -1,49 +1,49 @@
-#User Centric Front End Development
+# User Centric Front End Development
 
-##Idea - Residential Conveyancing Quote Form
+## Idea - Residential Conveyancing Quote Form
 
-###Mission Statement:
+### Mission Statement:
 Create a simple, easy to use quote form for clients that need residential conveyancing services. 
 
-##Goals
-###Business Goals:
+## Goals
+### Business Goals:
 Gain as many leads as possible
 Collect data for a mailing list
 Make on-boarding easy and efficient
 
-###Customer Goals:
+### Customer Goals:
 Get a quote in a simple and easy way
 
-##Features To Achieve These Goals
+## Features To Achieve These Goals
 Form to collect user data and generate quote
 Easy to use navigation
 
-##Pages Needed
+## Pages Needed
 
-###Home
+### Home
 Logo - Navigation
 Hero
 Option to choose Purchase or Sale quote
 
-###Quote Form
+### Quote Form
 Logo - Navigation
 Quote Form
 
-###About
+### About
 Logo - Navigation
 Explanation of services and business
 
-##Header Footer
-###Header
+## Header Footer
+### Header
 Logo - Navigation - External Social Media
 
-###Footer
+### Footer
 Business info - Map - Address
 
-##Quote Form
-###Information Needed To Make Quote
+## Quote Form
+### Information Needed To Make Quote
 
-####Minimum/Required
+#### Minimum/Required
 Name
 Email
 Type of Quote
@@ -53,23 +53,23 @@ Using a Purchase Scheme
 Misc property options (Newbuild, Unregistered, Auction, Buy To Let, Repossession, High-Rise Leasehold)
 Is this an additional property
 
-####Nice to Have
+#### Nice to Have
 Phone
 Address
 Wireframe
 Using Figma - figma.com
 
-#Wireframes
+# Wireframes
 
-##Desktop
-![Desktop Wireframe](\assets\images\desktop.png)
+## Desktop
+![Desktop Wireframe](/assets/images/desktop.png)
 
-##Tablet
-![Tablet Wireframe](\assets\images\tablet.png)
+## Tablet
+![Tablet Wireframe](/assets/images/tablet.png)
 
-#Phone
-![Phone Wireframe](\assets\images\phone.png)
-![Second Phone Wireframe](\assets\images\phone2.png)
+# Phone
+![Phone Wireframe](/assets/images/phone.png)
+![Second Phone Wireframe](/assets/images/phone2.png)
 
 I mainly used HTML and CSS to code this project. Bootstrap 5 has been used to enable easy styling of the project. There is also a small section of Javascript embedded in the Quote Page and the Bootstrap JS dependencies are also included.
 
@@ -77,7 +77,7 @@ I began by coding the header. I wanted to have a clean, simple to navigate heade
 
 I used a trick whereby you create a button by using a checkbox input and a label. The checkbox button is placed above the element that will be revealed, and the label for that checkbox is placed where the button will appear. Then pseudo class :checked can be used to trigger the reveal of the hidden element.
 
-The next section I created was the footer. I wanted three sections, showing the address, a map and some blurb about the company. I used the bootstrap ‘order’ utility classes to change the order of these depending on screen size. 
+The next section I created was the footer. I wanted three sections, showing the address, a map and some blurb about the company. I used the bootstrap ‘order’ utility classes to change the order of these depending on screen size.
 
 I then duplicated the code to make two more pages (three in total). I could then add the body code separately on each page.
 
@@ -86,5 +86,5 @@ The Home page and About page are quite basic, simple text based information. The
 I made sure to keep all IDs unique while making this form.
 
 
-#Deployment
+# Deployment
 I deployed this project using the code institute recommended process of hosting on Github Pages. I included the images from the readme in the assets folder.
