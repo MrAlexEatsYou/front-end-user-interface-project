@@ -4,7 +4,7 @@
 
 ### Mission Statement:
 
-Create a simple, easy to use quote form for clients that need residential conveyancing services. 
+Create a simple, easy to use quote form for clients that need residential conveyancing services.
 
 ## Goals
 
